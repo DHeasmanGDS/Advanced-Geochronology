@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-os.chdir('C:/USask Python/geochronology')
+os.chdir('C:/USask Python/advanced-geochronology')
 pd.options.display.max_columns = 2000
 pd.set_option('display.float_format', lambda x: '%.11f' % x)
 
@@ -57,3 +57,4 @@ print(geochron.calc_present_day_comp_Sr(0.704, 500, 2000))
 print(geochron.calc_age_Sr(0.704,1000,0.73))
 print(geochron.calc_age_Sr(0.0,1000,0.73))
 print(geochron.calc_present_day_comp_Sr(0.704,500,500))
+print(geochron.convert_halflife(4469.30))
